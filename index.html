@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montana Resorts</title>
+    <script src="https://kit.fontawesome.com/942547a0cd.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <!-- <link rel="stylesheet" href="./boxcss.css"> -->
+    
+    <style>
+      *{
+        /* margin: 0%; */
+        /* padding: 1%; */
+        /* border: 1px solid black;  */
+        max-width: 100%;
+      }
+      .navbar{
+
+         position: fixed;
+         z-index: 1; 
+         /* z-index: 1; */
+         width: 100%;
+         /* background-image: url("./img1.png.jpg"); */
+        
+      }
+      #navbar-colour{
+        color: black;
+      }
+      .carousel slid{
+        position: relative;
+        z-index: 1;
+      }
+      .cont{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+      }
+      #carouselExampleControls{
+        width: 100vw;
+      }
+      .carousel-control-prev{
+        border: 1px solid;
+        border-radius: 500px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 30%;
+        background-color: gray;
+   
+      }
+      .carousel-control-prev:hover{
+        background-color: rgb(3, 174, 242);
+      }
+      .carousel-control-next{
+        border: 1px solid white;
+        border-radius: 500px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        margin-top: 30%;
+        background-color: gray
+      }
+      .carousel-control-next:hover{
+        background-color: rgb(3, 174, 242);
+      }
+      .card{
+              /* border: none;   */
+            height: 750px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+      .img4{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 25em;
+      }
+      .card-title {
+        justify-content: flex-end;
+        gap: 50em;
+      }
+      .card-text{
+        justify-content: flex-end;
+      }
+      .card1{
+        border: 1px solid;
+        width: 900px;
+        
+        display: flex;
+        align-items: center; 
+      }
+      .card-title1{
+        display: flex;
+        justify-content: center;
+      }
+      h1{
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: lighter;
+      }
+      .button:hover{
+          background-color:rgb(88, 157, 185); 
+          color: black;
+          transform: scale(1.1);
+      }
+      a:hover{
+color: rgb(3, 174, 242); ;
+      }
+      .container-fluid1{
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .bott{
+        border-width:450px;
+      }
+      #i{
+        margin-bottom: 15%;
+        float: right;
+        display: flex;
+        width: 4%;
+        size: 15%;
+      }
+      .navbutton:hover{
+        transform: scale(1.3);
+        background-color: white;
+        
+      }
+      .footbutton:hover{
+        transform: scale(1.1);
+      }
+      /* .card:hover{
+        transform: scale(1.1);
+      } */
+      .carousel-caption{
+        margin-bottom: 33%;
+        /* font-size: xx-large; */
+      }
+      .carousel-caption h5{
+        font-size: 100px;
+        font-weight: lighter;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      .card10:hover{
+         transform: scale(1.1); 
+       
+      }
+      .card12:hover{
+        transform: scale(1.1);
+      }
+   
+
+    </style>
+
+</head>
+<body>
+    <!-- nava bar -->
+    <nav class="navbar navbar-expand-lg bg-dark" id="navbar-color">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./Screenshot (21).png" alt="" width="59%" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" style="color: white;" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="color: white;" aria-current="page" href="#room">Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Aboutus" style="color: white;">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                  pages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#delicious">Elements</a></li>
+                  <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                  Blog
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#blog">Blog</a></li>
+                  <li><a class="dropdown-item" href="#blog">Single Blog</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#context" style="color: white;">Contant</a>
+              </li>
+            </ul>
+            <form class="d-flex ">
+              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-square-threads"></i>
+              <button class="btn btn-primary " class="navbutton" style="margin-left: 0%;" type="submit">Book A Room</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- nava bar end -->
+      <!-- carousel -->
+      
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img1.png.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Montana Resorts</h5>
+              <p style="font-size: 30px;">Unlock to enjoy the view of Martine</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img2.png.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Life Is Beautiful</h5>
+              <p style="font-size: 30px;">Unlock to enjoy the view of Montana</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img3.png.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Montana Beach </h5>
+              <p style="font-size: 30px;">A place of relaxation, rest, and tranquility</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- carousel end -->
+      <!-- About Us -->
+      <!-- we have to move the pic -->
+      <section  id="Aboutus" style="width: 90vw; padding-left: 5%; margin: 3%; border: 1px solid white;">
+      <div class="card5 mb-3" >
+        <div class="row g-0">
+          
+          <div class="col-md-4">
+            <img src="./img4.png" class="img-fluid rounded-start" alt="..." class="img4">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" style="margin-left: 5%;">
+              <!-- <h4 style="color: rgb(106, 106, 227)" class="card-tit">About Us</h4> -->
+              <h5 class="card-title " style="color:rgb(106, 106, 227) ; font-weight: lighter;">About Us</h5>
+              <p class="card-text" style="font-size: 50px; font-weight: lighter;">A Luxuries Hotel
+                <br/>with Nature</p>
+              <p class="card-text" style="font-size: x-large; font-weight: lighter;"><small class="text-muted" >Suscipit libero pretium nullam potenti. Interdum, blandit <br/> phasellus consectetuer dolor ornare dapibus enim ut <br/> tincidunt rhoncus tellus sollicitudin pede nam maecenas, <br/> dolor sem. Neque sollicitudin enim. Dapibus lorem feugiat <br/> facilisi faucibus et. Rhoncus.</small></p>
+              <a href="#" style="color: gray; font-size: 18px; font-weight: lighter; gap: 1em;">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- end of About Us -->
+      <!-- Our Offers -->
+      <!-- first -->
+      <div style="border: 1px solid white;" id="offers">
+        <h5 class="card-title1" style="color:rgb(106, 106, 227) ; font-weight: lighter; margin-top: 5%;">Our Offers</h5>
+        <h1>Ongoing Offers</h1>
+      <div class="card-group" style="margin: 0%; border: none;">
+        <!-- first -->
+        <div class="card2" style="border: 1px solid white;">
+          <img src="./img5.png" class="card-img-top" alt="..." width="15%" height="55%">
+          <div class="card-body" style="margin-left: 5%;">
+            <h5 class="card-title" style="font-size: x-large; font-weight: lighter;">Up to 35% savings on Club
+             <br/> rooms and Suites</h5>
+            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+            <ul class="list-group list-group-flush">
+              <li style="color: gray; font-size: 21px;font-weight: lighter; margin-left: 7%;">Luxaries condition</li>
+              <li style="color: gray;font-size: 21px;font-weight: lighter; margin-left: 7%;">3 Adults & 2 Children size</li>
+              <li style="color: gray; font-size: 21px;font-weight: lighter;margin-left: 7%;">Sea view side</li>
+            </ul>
+          
+<!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+          <button class="button" style="border-color: rgb(3, 174, 242); border-width: 0%;; background-color: white;  color:rgb(3, 174, 242); margin-top:15% ; width: 70%;height: 18%; font-weight: lighter;">Book Now</button>
+          
+        </div>
+        </div>
+        <!-- second -->
+        <div class="card2" style="border: 1px solid white;">
+          <img src="./img6.png" class="card-img-top" alt="..." width="15%" height="55%">
+          <div class="card-body" style="margin-left: 5%;">
+            <h5 class="card-title" style="font-size: x-large; font-weight: lighter;">Up to 35% savings on Club
+              <br/> rooms and Suites</h5>
+            <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+            <ul class="list-group list-group-flush">
+              <li style="color: gray; font-size: 21px;font-weight: lighter; margin-left: 7%;">Luxaries condition</li>
+              <li style="color: gray;font-size: 21px;font-weight: lighter; margin-left: 7%;">3 Adults & 1 Children size</li>
+              <li style="color: gray; font-size: 21px;font-weight: lighter;margin-left: 7%;">Sea view side</li>
+            </ul>
+            <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+            <button class="button" style="border-color: rgb(3, 174, 242); border-width: 0%;; background-color: white;  color:rgb(3, 174, 242); margin-top:15% ; width: 70%;height: 18%; font-weight: lighter;">Book Now</button>
+          </div>
+        </div>
+        <!-- three -->
+        <div class="card2" style="border: 1px solid white;">
+          <img src="./img7.png" class="card-img-top" alt="..." width="15%" height="55%">
+          <div class="card-body" style="margin-left: 5%;">
+            <h5 class="card-title" style="font-size: x-large; font-weight: lighter;">Up to 35% savings on Club
+              <br/> rooms and Suites</h5>
+            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p> -->
+            <ul class="list-group list-group-flush">
+              <li style="color: gray; font-size: 21px;font-weight: lighter; margin-left: 7%;">Luxaries condition</li>
+              <li style="color: gray;font-size: 21px;font-weight: lighter; margin-left: 7%;">4 Adults & 3 Children size</li>
+              <li style="color: gray; font-size: 21px;font-weight: lighter;margin-left: 7%;">Sea view side</li>
+            </ul>
+        
+            <!-- <small class="text-muted">Last updated 3 mins ago</small> -->
+            <button class="button" style="border-color: rgb(3, 174, 242); border-width: 0%;; background-color: white;  color:rgb(3, 174, 242); margin-top:15% ; width: 70%;height: 18%; font-weight: lighter;">Book Now</button>
+        </div>
+        </div>
+        </div>
+      </div>
+      <!-- three -->
+      <!-- end of Our Offers -->
+
+      <!-- Delicious Food -->
+      <div class="car mb-3" id="delicious" style="max-width: 100%; margin: 3%; border: 1px solid white; padding-left: 5%; margin-bottom: 15%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./img8.png" class="img-fluid rounded-start" alt="..." width="800%" height="800%">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" style="margin-left: 5%;">
+              <h5 class="card-title " style="color:rgb(106, 106, 227) ; font-weight: lighter;">Delicious Food</h5>
+              <p class="card-text" style="font-size: 50px; font-weight: lighter;">We Serve Fresh and
+               <br/> Delicious Food</p>
+              <p class="card-text" style="font-size: x-large; font-weight: lighter;"><small class="text-muted" >Suscipit libero pretium nullam potenti. Interdum, blandit <br/> phasellus consectetuer dolor ornare dapibus enim ut <br/> tincidunt rhoncus tellus sollicitudin pede nam maecenas, <br/> dolor sem. Neque sollicitudin enim. Dapibus lorem feugiat <br/> facilisi faucibus et. Rhoncus.</small></p>
+              <a href="#" style="color: gray; font-size: 18px; font-weight: lighter; gap: 1em;">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of Delicious Food -->
+
+      <!-- Featured Rooms -->
+      <!-- first -->
+      <section id="room" style="width: 100%; margin-top:7%;">
+      <div class="row row-cols-sm-1 row-cols-1 row-cols-md-1  g-4 ">
+        <div class="col">
+          <div class="card12" style="background-image: url(./img10.jpg);width: 49vw; height: 60vh;  background-size:cover;margin: 0%; border: 1px solid white;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body" style="margin-top: 35%; margin-right: 50%;">
+              <h5 class="card-title" style="font-size: 15px; color: white;">From $250/night</h5>
+              <h5 class="card-text" style="font-size: 30px; color: white;">Superior Room</h5>
+            </div>
+            <!-- hover not working -->
+            <a href="#"  style="margin-left: 55%; margin-bottom: 25%; color: white;" >Book Now</a>
+          </div>
+        </div>
+        <!-- second -->
+        <div class="col">
+          <div class="card12" style="background-image: url(./img9.jpg); width: 45vw; height: 60vh; background-size:cover;margin: 0%; border: 1px solid white;">
+          
+            <div class="card-body" style="margin-top: 35%; margin-right: 50%;">
+              <h5 class="card-title" style="font-size: 15px; color: white;">From $500/night</h5>
+              <h5 class="card-text" style="font-size: 30px; color: white;">Deluxe Room</h5>
+            </div>
+            <a href="#"  style="margin-left: 55%; margin-bottom: 25%; color: white;" >Book Now</a>
+          </div>
+        </div>
+        <!-- three -->
+        <div class="col">
+          <div class="card12" style="background-image: url(./img11.jpg); width: 49vw; height: 60vh; background-size:cover;margin: 0%; border: 1px solid white;">
+            
+            <div class="card-body"style="margin-top: 35%; margin-right: 50%;" >
+              <h5 class="card-title" style="font-size: 15px; color: white;">From $800/night</h5>
+              <h5 class="card-text" style="font-size: 30px; color: white;"> Signature Room</h5>
+            </div>
+            <a href="#"  style="margin-left: 55%; margin-bottom: 25%; color: white;" >Book Now</a>
+          </div>
+        </div>
+        <!-- four -->
+        <div class="col">
+          <div class="card12" style="background-image: url(./img12.jpg); width: 45vw; height: 60vh; background-size:cover;margin: 0%; border: 1px solid white;">
+            
+            <div class="card-body" style="margin-top: 35%; margin-right: 50%;">
+              <h5 class="card-title" style="font-size: 15px; color: white;">From $250/night</h5>
+              <h5 class="card-text" style="font-size: 30px; color: white;">Couple Room</h5>
+            </div>
+            <a href="#"  style="margin-left: 55%; margin-bottom: 25%; color: white;" >Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- end of Featured Rooms -->
+      <!-- For Reservation 0r Query? -->
+      <nav class="navbar1 navbar-light bg-ligth" style="margin-top: 10%;margin-bottom: 10%;margin-left: 15%; ">
+        <div class="container-fluid1" style="border: 1px solid rgb(207, 204, 204) ; width: 80%; height: 150px; ">
+          <h3 style="font-size: 35px; font-weight: 0.5px;">For Reservation 0r Query?</h3>
+          <form class="bott " style="display: flex; justify-content: flex-end; align-items: flex-end;">
+            <button style=" border: 1px solid rgb(3, 174, 242); border-radius: 25px; font-size: 25px; background-color:rgb(3, 174, 242); color: white; " >+10 5289 5689 25</button>
+          </form>
+        </div>
+      </nav>
+      <!-- end of For Reservation 0r Query? -->
+      <!-- photos -->
+      <!-- first -->
+      <div id="blog" class="card-group  ">
+        <div class="card10 col-sm-12 col-md-12" style="border: 1px solid rgb(147, 145, 145); background-image: url(./img13.jpg); background-size: cover; width: 20vw; height: 30vh;">
+          <!-- <img src="./img13.jpg" class="card-img-top" alt="..."> -->
+          <div class="overlay">
+            <a href="#"></a>
+            <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+          </div>
+          <!-- <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div> -->
+        </div>
+        <div class="card10" style="border: 1px solid rgb(147, 145, 145); background-image: url(./img14-1.jpg); background-size: cover; width: 20vw; height: 30vh;">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="overlay">
+            <a href="#"></a>
+            <!-- <h5 class="card-title">Card title</h5> -->
+            <!-- <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p> -->
+          </div>
+          <!-- <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div> -->
+        </div>
+        <div class="card10" style="border: 1px solid rgb(147, 145, 145); background-image: url(./img15.jpg); background-size: cover; width: 19vw; height: 30vh;">
+          <!-- <img src="..." class="card-img-top" alt="..."> -->
+          <div class="overlay">
+            <a href="#"></a>
+            <!-- <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p> -->
+          </div>
+          <!-- <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div> -->
+        </div>
+        <div class="card10" style="border: 1px solid rgb(147, 145, 145); background-image: url(./img16.jpg); background-size: cover; width: 19vw; height: 30vh;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="overlay">
+              <a href="#"></a>
+            </div>
+           
+          </div>
+          <div class="card10" style="border: 1px solid rgb(147, 145, 145); background-image: url(./img17.jpg); background-size: cover; width: 20vw; height: 30vh; margin-bottom: 0%;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="overlay">
+             <a href="#"></a>
+            </div>
+            
+          </div>
+      </div>
+      <!-- end of photos -->
+      <!-- footer -->
+       <footer id="context" style="background-color:black; height: 85vh; border: 1px solid black; padding-top: 8%; padding-bottom: 10%; padding-left: 10%; padding-right: 10%; width: 99vw "> 
+        <div class="card-group" style="margin-bottom: 0%;" >
+          
+            <!-- <div class="card"> -->
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
+              <div class="card-body" style="border: 1px solid black; width: 50px;height: 250px; background-color:black; margin-top: 0%; margin-bottom: 0%; ">
+                <h5 class="card-title" style="font-size: x-large; color: white;">Address</h5>
+                <p class="card-text" style="margin-top: 15%; font-weight: lighter; font-size: larger; color: rgb(152, 140, 140);">200, Green road, Mongla,<br/>
+                  New Yor City USA</p>
+                  <a href="#" style="margin-top: 25%; font-size: larger; color:rgb(152, 140, 140); font-weight: lighter;">Get Direction</a>
+              </div>
+            <!-- </div> -->
+            <!-- second -->
+            <!-- <div class="card"> -->
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
+              <div class="card-body" style="border: 1px solid black; width: 50px;height: 250px; background-color:black; margin-top: 0%; margin-bottom: 0%;">
+                <h5 class="card-title" style="font-size: x-large; color: white;">Reservation</h5>
+                <p class="card-text" style="margin-top: 15%; font-weight: lighter; font-size: larger; color: rgb(152, 140, 140);">+10 367 267 2678 <br/>
+                  reservation@montana.com</p>
+                
+              </div>
+              
+            <!-- </div> -->
+            <!-- three -->
+            <!-- <div class="card"> -->
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
+              <div class="card-body" style="border: 1px solid black; width: 50px;height: 250px; background-color:black; margin-top: 0%; margin-bottom: 0%;">
+                <h5 class="card-title" style="font-size: x-large; color: white;">Navigation</h5>
+                <p class="card-text" style="margin-top: 8%; font-weight: lighter; font-size: larger; color: rgb(152, 140, 140); gap: 50em;">Home<br/>
+                  Rooms
+                  <br/>About
+                  <br/>News</p>
+              </div>
+              
+            <!-- </div> -->
+            <!-- fore -->
+            <!-- <div class="card"> -->
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body" style="border: 1px solid black ; width: 180px;height: 250px; background-color:black; margin-top: 0%; margin-bottom: 0%;">
+                  <h5 class="card-title" style="font-size: x-large; color: white;">Newsletter</h5>
+                  <input type="text" placeholder="Enter your mail" style="height: 20%; width: 70%; margin-top: 14%;" /><button style="height: 20%; width: 25%; background-color:rgb(3, 174, 242); border-color: rgb(3, 174, 242);  " class="footbutton">Sign Up</button>
+  
+                  <p class="card-text" style="margin-top: 5%; font-weight: lighter; font-size: larger; color: rgb(152, 140, 140);">Subscribe newsletter to get updates</p>
+                </div>
+                
+              <!-- </div> -->
+              
+          </div>
+          <div style="margin-top: 9%; margin-right: 0%;">
+            <div style="border-top: 2px solid rgb(78, 77, 77); font-weight: lighter;"></div>
+            <h5 style="text-align: start; margin-top: 3%; font-weight: lighter; color: rgb(152, 140, 140); font-size: large;">@copyright by CodegnanDestination and <i class="fa-regular fa-heart"></i> <span style="color:rgb(3, 174, 242); ;"> Akhila</span> </h5>
+            <a href="#" style="margin-right: 5%;"><i class="fa-solid fa-arrow-up"></i></a>
+            
+          </div>
+          <div style="margin-bottom: 25%; text-align: end; color: rgb(152, 140, 140); ">
+            <i id="i" class="fa-brands fa-facebook"></i>
+            <i id="i" class="fa-brands fa-twitter"></i>
+          <i id="i" class="fa-brands fa-instagram" ></i>
+            
+           
+          </div>
+          
+       </footer> 
+          <!-- we create copyrights -->
+      
+      <!-- end of footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+</body>
+</html>
